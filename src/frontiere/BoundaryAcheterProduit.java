@@ -10,6 +10,16 @@ public class BoundaryAcheterProduit {
 	}
 
 	public void acheterProduit(String nomAcheteur) {
-		// TODO à completer
+		if (!controlAcheterProduit.verifierIdentite(nomAcheteur)) {
+			System.out.println(
+					"Je suis désolé " + nomAcheteur + 
+					" mais il fait être un habitant de notre village pour commercer ici."
+			);
+		} else {
+			String produitCherche = Clavier.entrerChaine("Quel produit voulez-vous acheter ?\n");
+			
+		}
+		
+		
 	}
 }
