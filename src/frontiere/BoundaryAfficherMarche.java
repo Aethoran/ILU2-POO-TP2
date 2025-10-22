@@ -16,12 +16,10 @@ public class BoundaryAfficherMarche {
 			chaine.append("Le marche est vide, revenez plus tard");
 		} else {
 			chaine.append(nomAcheteur + ", vous trouvez au marche :\n");
-			for(int i = 0; i<infosMarche.length; i++) {
+			for(int i = 0; i<infosMarche.length; i+=3) {
 				chaine.append("- " + infosMarche[i] + " qui vend ");
-				i++;
-				chaine.append(infosMarche[i] + " ");
-				i++;
-				chaine.append(infosMarche[i] + "\n");
+				chaine.append(infosMarche[i+1] + " ");
+				chaine.append(infosMarche[i+2] + "\n");
 			}
 		}
 		System.out.println(chaine.toString());

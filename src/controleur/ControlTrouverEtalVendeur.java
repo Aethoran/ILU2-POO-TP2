@@ -18,12 +18,5 @@ public class ControlTrouverEtalVendeur {
 		}
 	}
 	
-	public String[] donneesEtal(String nomVendeur) {
-		Etal etal = trouverEtalVendeur(nomVendeur);
-		String[] donneesEtal = new String[5];
-		donneesEtal = etal.etatEtal();
-		etal.libererEtal();
-		return donneesEtal;
-	}
 	
 }
